@@ -48,6 +48,7 @@
             this.RegionExportItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExportToMapItem = new System.Windows.Forms.ToolStripMenuItem();
             this.QuerystatisticsItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AttrQueryItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.LengthCalbtn = new System.Windows.Forms.ToolStripButton();
             this.AreaCalbtn = new System.Windows.Forms.ToolStripButton();
@@ -68,7 +69,6 @@
             this.FoldLyrsItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenLyrsItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CloseLyrsItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AttrQueryItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.VerticalSplit)).BeginInit();
             this.VerticalSplit.Panel1.SuspendLayout();
             this.VerticalSplit.Panel2.SuspendLayout();
@@ -210,7 +210,7 @@
             // 
             this.LoadMxdItem.Image = global::GisDemo.Properties.Resources.GenericOpen_B_16;
             this.LoadMxdItem.Name = "LoadMxdItem";
-            this.LoadMxdItem.Size = new System.Drawing.Size(181, 26);
+            this.LoadMxdItem.Size = new System.Drawing.Size(174, 26);
             this.LoadMxdItem.Text = "打开地图文档";
             this.LoadMxdItem.Click += new System.EventHandler(this.LoadMxdItem_Click);
             // 
@@ -218,7 +218,7 @@
             // 
             this.DataAddItem.Image = global::GisDemo.Properties.Resources.DataAdd_B_16;
             this.DataAddItem.Name = "DataAddItem";
-            this.DataAddItem.Size = new System.Drawing.Size(181, 26);
+            this.DataAddItem.Size = new System.Drawing.Size(174, 26);
             this.DataAddItem.Text = "添加数据";
             this.DataAddItem.Click += new System.EventHandler(this.DataAddItem_Click);
             // 
@@ -226,14 +226,14 @@
             // 
             this.SaveItem.Image = global::GisDemo.Properties.Resources.GenericSave16;
             this.SaveItem.Name = "SaveItem";
-            this.SaveItem.Size = new System.Drawing.Size(181, 26);
+            this.SaveItem.Size = new System.Drawing.Size(174, 26);
             this.SaveItem.Text = "保存";
             this.SaveItem.Click += new System.EventHandler(this.SaveItem_Click);
             // 
             // SaveAsItem
             // 
             this.SaveAsItem.Name = "SaveAsItem";
-            this.SaveAsItem.Size = new System.Drawing.Size(181, 26);
+            this.SaveAsItem.Size = new System.Drawing.Size(174, 26);
             this.SaveAsItem.Text = "另存为";
             this.SaveAsItem.Click += new System.EventHandler(this.SaveAsItem_Click);
             // 
@@ -243,21 +243,21 @@
             this.RegionExportItem,
             this.ExportToMapItem});
             this.ExportMapItem.Name = "ExportMapItem";
-            this.ExportMapItem.Size = new System.Drawing.Size(181, 26);
+            this.ExportMapItem.Size = new System.Drawing.Size(174, 26);
             this.ExportMapItem.Text = "导出地图";
             this.ExportMapItem.Click += new System.EventHandler(this.ExportMapItem_Click);
             // 
             // RegionExportItem
             // 
             this.RegionExportItem.Name = "RegionExportItem";
-            this.RegionExportItem.Size = new System.Drawing.Size(181, 26);
+            this.RegionExportItem.Size = new System.Drawing.Size(144, 26);
             this.RegionExportItem.Text = "区域导出";
             this.RegionExportItem.Click += new System.EventHandler(this.RegionExportItem_Click);
             // 
             // ExportToMapItem
             // 
             this.ExportToMapItem.Name = "ExportToMapItem";
-            this.ExportToMapItem.Size = new System.Drawing.Size(181, 26);
+            this.ExportToMapItem.Size = new System.Drawing.Size(144, 26);
             this.ExportToMapItem.Text = "全图导出";
             this.ExportToMapItem.Click += new System.EventHandler(this.ExportToMapItem_Click);
             // 
@@ -268,6 +268,14 @@
             this.QuerystatisticsItem.Name = "QuerystatisticsItem";
             this.QuerystatisticsItem.Size = new System.Drawing.Size(81, 24);
             this.QuerystatisticsItem.Text = "查询统计";
+            // 
+            // AttrQueryItem
+            // 
+            this.AttrQueryItem.Image = global::GisDemo.Properties.Resources.TableStandaloneSmall161;
+            this.AttrQueryItem.Name = "AttrQueryItem";
+            this.AttrQueryItem.Size = new System.Drawing.Size(181, 26);
+            this.AttrQueryItem.Text = "属性查询";
+            this.AttrQueryItem.Click += new System.EventHandler(this.AttrQueryItem_Click);
             // 
             // toolStrip1
             // 
@@ -393,13 +401,13 @@
             // 
             this.ExportDataItem.Image = global::GisDemo.Properties.Resources.LayerExportData16;
             this.ExportDataItem.Name = "ExportDataItem";
-            this.ExportDataItem.Size = new System.Drawing.Size(181, 26);
+            this.ExportDataItem.Size = new System.Drawing.Size(146, 26);
             this.ExportDataItem.Text = "导出数据";
             // 
             // ExportToCADItem
             // 
             this.ExportToCADItem.Name = "ExportToCADItem";
-            this.ExportToCADItem.Size = new System.Drawing.Size(181, 26);
+            this.ExportToCADItem.Size = new System.Drawing.Size(146, 26);
             this.ExportToCADItem.Text = "导出CAD";
             this.ExportToCADItem.Click += new System.EventHandler(this.ExportToCADItem_Click);
             // 
@@ -452,13 +460,6 @@
             this.CloseLyrsItem.Size = new System.Drawing.Size(172, 26);
             this.CloseLyrsItem.Text = "关闭所有图层";
             this.CloseLyrsItem.Click += new System.EventHandler(this.CloseLyrsItem_Click);
-            // 
-            // AttrQueryItem
-            // 
-            this.AttrQueryItem.Image = global::GisDemo.Properties.Resources.TableStandaloneSmall161;
-            this.AttrQueryItem.Name = "AttrQueryItem";
-            this.AttrQueryItem.Size = new System.Drawing.Size(181, 26);
-            this.AttrQueryItem.Text = "属性查询";
             // 
             // MainFrm
             // 

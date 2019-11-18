@@ -23,3 +23,7 @@ E:\C#\GisDemo\GisDemo\obj\Debug\GisDemo.pdb
 E:\C#\GisDemo\GisDemo\bin\Debug\GisDemo.pdb
 E:\C#\GisDemo\GisDemo\obj\Debug\GisDemo.csprojResolveAssemblyReference.cache
 E:\C#\GisDemo\GisDemo\obj\Debug\GisDemo.forms.ExportCADfrm.resources
+E:\C#\GisDemo\GisDemo\obj\Debug\GisDemo.forms.AttrQueryFrm.resources
+E:\C#\GisDemo\Arcengine\GisDemo\bin\Debug\GisDemo.exe.config
+E:\C#\GisDemo\Arcengine\GisDemo\obj\Debug\GisDemo.exe
+E:\C#\GisDemo\Arcengine\GisDemo\obj\Debug\GisDemo.pdb

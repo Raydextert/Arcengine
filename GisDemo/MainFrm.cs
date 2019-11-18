@@ -43,6 +43,7 @@ namespace GisDemo
         private object missing = Type.Missing;
         private IFeatureLayer featureLyr = null;
         private AttrbuteFrm attrFrm = null;
+        private AttrQueryFrm attrqueryFrm = null;
         #endregion
         public MainFrm()
         {
@@ -684,6 +685,16 @@ namespace GisDemo
             ExportCADfrm frm = new ExportCADfrm();
             frm.Mapcontrol = this.axMapcontrol.GetOcx () as IMapControlDefault;
             frm.Show();
+        }
+
+        private void AttrQueryItem_Click(object sender, EventArgs e)
+        {
+            if (attrqueryFrm == null || attrqueryFrm.IsDisposed)
+            {
+                attrqueryFrm = new AttrQueryFrm();
+                attrqueryFrm.Mapcontrol = this.axMapcontrol.GetOcx() as IMapControlDefault;
+                attrqueryFrm.Show();
+            }
         }
 
     }
