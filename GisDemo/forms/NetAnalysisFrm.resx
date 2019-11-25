@@ -117,83 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="axToolbarControl.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAewEAAAIB
-        AAAAAQAAAAAAAAAAAAAAAGYBAAAPAAAAAgAAAAEAAAAKAAAAAAAAAABWHwAAUQIAAAAAAAAaAAAAYQB4
-        AE0AYQBwAGMAbwBuAHQAcgBvAGwAAAD///QBAAAAAAAAAAAAAAAAAAAA/////wAAAAANAAAAAAAAAAAA
-        AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAUAAAD//wAAAAABAAHe+AhhiRtMQZpq/Xc/3413AAAAAAAA
-        AAAAAAEAAAD//wAAAAABAAGFBMu8Rt1bRoGetBNuRx+SAAAAAAAAAAAAAAEAAAD//wAAAAABAAF5xgCx
-        xXYNQbyNrp54gqgPAAAAAAAAAAAAAAEAAAD//wAAAAABAAEesw84JGxcT7HfR/M1hriFAAAAAAAAAAAA
-        AAEAAAD//wAAAAABAAFyU2ewcQKARposJps/DAHoAAAAAAAAAAAAAAEAAAAAAAAADwAAgAAAAAAAAA8A
-        AIAAAAAAAAAAABAAAAAQAAAACw==
-</value>
-  </data>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>151, 17</value>
-  </metadata>
-  <data name="axTOOControl.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAhgAAAAIB
-        AAAAAQAAAAAAAAAAAAAAAHEAAAAHAAAAAgAAAAEAAAAKAAAAAAAAAAAaAAAAYQB4AE0AYQBwAGMAbwBu
-        AHQAcgBvAGwAAAAAAAAAAQAAAAAAAAD//wAAAAAAAAAAAA0AAAAAAAAAAAAAAAAAAAAAAFYfAADOLQAA
-        AAACAAAAAAAAAAAAAAs=
-</value>
-  </data>
-  <data name="axLicenseControl1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAKgAAAAIB
-        AAAAAQAAAAAAAAAAAAAAABUAAAABAAAAAgAAAAEAAAAKAAAAAAAAAAAL
-</value>
-  </data>
-  <data name="axMapcontrol.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAGQYAAAIB
-        AAAAAQAAAAAAAAAAAAAAAAQGAAALAAAAAgAAAAEAAAAKAAAAAAAAAAB/NQAASTAAAAAAAQAAAAEAAAAA
-        AAAAAAAAAAAAAAANAAAAAAAAAAAAAAAAAAAAAAD//wD//3aqveY1TdARmL4AgF987SEAAAAANAAIAAAA
-        TQBhAHAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////+Du0aWEpXSEaL2CAAJtvIrAQAAAAYA
-        AQAAAAAAAAAUAAAAPABEAGUAZgBhAHUAbAB0AD4AAAD/////AAAAAAAAAAAAAAAAAAAAAAAAAwAAAAEA
-        AAABAAAAcjmPzr7p0RGiMggACbbyKwIAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAAAAA
-        AAAAAAAAAACAeqim0R2yEb9RCAAgIvVzAwAAAAcAvwAAAEdFT0dDU1siR0NTX05vcnRoX0FtZXJpY2Fu
-        XzE5MjciLERBVFVNWyJEX05vcnRoX0FtZXJpY2FuXzE5MjciLFNQSEVST0lEWyJDbGFya2VfMTg2NiIs
-        NjM3ODIwNi40LDI5NC45Nzg2OTgyXV0sUFJJTUVNWyJHcmVlbndpY2giLDAuMF0sVU5JVFsiRGVncmVl
-        IiwwLjAxNzQ1MzI5MjUxOTk0MzNdLEFVVEhPUklUWVsiRVBTRyIsNDI2N11dAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAIBmwAAAAAAAgGZAAQAAAAAAAAB5wAAAAAAAAHnA/////2TNzUEAAAAAAGr4wAAAAAAAiMNA
-        AAAAAABq+MAAAAAAAIjDQNHctZx8SkM+/Knx0k1iUD/8qfHSTWJQPwIAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQI9AAAAAAABAj0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAQC81HI4p0xGfTwDAT2vGGQQAAAABAAYhCRSOmOO/BiEJFI6Y
-        4z8AAAAAAADgPwAAAAAAAAhA//8AAAAIAAAAAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAAAACAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAAABWPcfgiGyMSbd8eGBuaIyXBQAAAAIA
-        AACWxOl+I9HQEYODCAAJuZbMBgAAAAEAAQAA4BxYrARGTEAJF2hRkDlTQIKiuNSeBlFAAQAAAAAAAAAA
-        AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAIAAAAAAAAAAAACAAAAAAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA
-        AAD//woAAAAAAAAAAECPQAAAAAAAiMNAAAAAAABw10AAAAAAAGr4QAAAAACAhA5BAAAAAICEHkEAAAAA
-        YOMmQQAAAACAhC5BAAAAAGDjRkEAAAAA0BJjQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////
-        AgAAAAAA//8KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        //8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAPQBAAAAAAAAAAD/////
-        Cw==
-</value>
-  </data>
-  <metadata name="MenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>290, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="AreaCalbtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="FlowDiretionBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
@@ -208,13 +133,22 @@
         TgDQASA1MVpwzwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="LyrContxtMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>428, 23</value>
-  </metadata>
-  <metadata name="MapMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>632, 20</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>82</value>
+  <data name="AnalysisItemBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
+        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
+        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
+        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
+        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
+        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
+        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
+        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
+        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>

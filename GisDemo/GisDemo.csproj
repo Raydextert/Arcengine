@@ -69,6 +69,9 @@
     <Reference Include="ESRI.ArcGIS.GlobeCore, Version=10.3.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="ESRI.ArcGIS.NetworkAnalysis, Version=10.3.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
     <Reference Include="ESRI.ArcGIS.Output, Version=10.3.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
@@ -94,6 +97,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\ClearselectionTool.cs" />
     <Compile Include="Command\DciBaseTool.cs" />
     <Compile Include="Command\ExportCADTool.cs" />
     <Compile Include="Command\ExportMap.cs" />
@@ -106,6 +110,12 @@
     </Compile>
     <Compile Include="forms\AttrbuteFrm.Designer.cs">
       <DependentUpon>AttrbuteFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\AttrByGeoSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\AttrByGeoSel.Designer.cs">
+      <DependentUpon>AttrByGeoSel.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\AttrQueryFrm.cs">
       <SubType>Form</SubType>
@@ -131,6 +141,12 @@
     <Compile Include="forms\frmMeasureResult.Designer.cs">
       <DependentUpon>frmMeasureResult.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\NetAnalysisFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\NetAnalysisFrm.Designer.cs">
+      <DependentUpon>NetAnalysisFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +157,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\AttrbuteFrm.resx">
       <DependentUpon>AttrbuteFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\AttrByGeoSel.resx">
+      <DependentUpon>AttrByGeoSel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\AttrQueryFrm.resx">
       <DependentUpon>AttrQueryFrm.cs</DependentUpon>
@@ -153,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\frmMeasureResult.resx">
       <DependentUpon>frmMeasureResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\NetAnalysisFrm.resx">
+      <DependentUpon>NetAnalysisFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
@@ -181,6 +203,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\UtilityNetworkSolve16.png" />
+    <None Include="Resources\UtilityNetworkBarrierEdgeAddTool16.png" />
+    <None Include="Resources\UtilityNetworkBarrierJunctionAddTool16.png" />
+    <None Include="Resources\UtilityNetworkEdgeAddTool16.png" />
+    <None Include="Resources\UtilityNetworkJunctionAddTool161.png" />
+    <None Include="Resources\UtilityNetworkJunctionAddTool16.png" />
+    <None Include="Resources\SelectionClearSelected16.png" />
     <None Include="bin\Icon\GenericTreeContract16.png" />
     <None Include="bin\Icon\GenericTreeExpand16.png" />
     <None Include="bin\Icon\LayerExportData16.png" />

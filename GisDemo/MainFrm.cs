@@ -44,6 +44,10 @@ namespace GisDemo
         private IFeatureLayer featureLyr = null;
         private AttrbuteFrm attrFrm = null;
         private AttrQueryFrm attrqueryFrm = null;
+
+        //网络分析窗体
+
+        private NetAnalysisFrm netAnalysisFrm = null;
         #endregion
         public MainFrm()
         {
@@ -695,6 +699,36 @@ namespace GisDemo
                 attrqueryFrm.Mapcontrol = this.axMapcontrol.GetOcx() as IMapControlDefault;
                 attrqueryFrm.Show();
             }
+        }
+
+        private void QuerystatisticsItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Clearselectionbtn_Click(object sender, EventArgs e)
+        {
+            ClearselectionTool tool = new ClearselectionTool();
+            tool.OnCreate(this.axMapcontrol.GetOcx());
+            this.axMapcontrol.CurrentTool = tool as ITool;
+        }
+
+        private void SelectByPointItem_Click(object sender, EventArgs e)
+        {
+               //点击选择
+
+        }
+
+        private void GeometryNetAnalysis_Click(object sender, EventArgs e)
+        {
+              //加载分析窗体
+            if (netAnalysisFrm == null || netAnalysisFrm.IsDisposed)
+            {
+                netAnalysisFrm = new NetAnalysisFrm();
+                netAnalysisFrm.Mapcontrol = this.axMapcontrol.GetOcx() as IMapControlDefault;
+            }
+
+            netAnalysisFrm.Show();
         }
 
     }

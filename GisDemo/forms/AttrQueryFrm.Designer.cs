@@ -39,10 +39,11 @@
             this.orbtn = new System.Windows.Forms.Button();
             this.ValueList = new System.Windows.Forms.ListBox();
             this.uniquevalueBtn = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.exptxtBox = new System.Windows.Forms.TextBox();
             this.surebtn = new System.Windows.Forms.Button();
             this.ApplyBtn = new System.Windows.Forms.Button();
             this.CancleBtn = new System.Windows.Forms.Button();
+            this.Clearbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblLyr
@@ -72,6 +73,7 @@
             this.fieldslistBox.Size = new System.Drawing.Size(407, 94);
             this.fieldslistBox.TabIndex = 2;
             this.fieldslistBox.SelectedIndexChanged += new System.EventHandler(this.fieldslistBox_SelectedIndexChanged);
+            this.fieldslistBox.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.fieldslistBox_MouseDoubleClick);
             // 
             // equalbtn
             // 
@@ -81,6 +83,7 @@
             this.equalbtn.TabIndex = 3;
             this.equalbtn.Text = "=";
             this.equalbtn.UseVisualStyleBackColor = true;
+            this.equalbtn.Click += new System.EventHandler(this.equalbtn_Click);
             // 
             // likebtn
             // 
@@ -90,6 +93,7 @@
             this.likebtn.TabIndex = 4;
             this.likebtn.Text = "like(%)";
             this.likebtn.UseVisualStyleBackColor = true;
+            this.likebtn.Click += new System.EventHandler(this.likebtn_Click);
             // 
             // smallerbtn
             // 
@@ -99,6 +103,7 @@
             this.smallerbtn.TabIndex = 5;
             this.smallerbtn.Text = "<";
             this.smallerbtn.UseVisualStyleBackColor = true;
+            this.smallerbtn.Click += new System.EventHandler(this.smallerbtn_Click);
             // 
             // greaterbtn
             // 
@@ -108,6 +113,7 @@
             this.greaterbtn.TabIndex = 6;
             this.greaterbtn.Text = ">";
             this.greaterbtn.UseVisualStyleBackColor = true;
+            this.greaterbtn.Click += new System.EventHandler(this.greaterbtn_Click);
             // 
             // andbtn
             // 
@@ -117,6 +123,7 @@
             this.andbtn.TabIndex = 7;
             this.andbtn.Text = "and";
             this.andbtn.UseVisualStyleBackColor = true;
+            this.andbtn.Click += new System.EventHandler(this.andbtn_Click);
             // 
             // orbtn
             // 
@@ -126,6 +133,7 @@
             this.orbtn.TabIndex = 8;
             this.orbtn.Text = "or";
             this.orbtn.UseVisualStyleBackColor = true;
+            this.orbtn.Click += new System.EventHandler(this.orbtn_Click);
             // 
             // ValueList
             // 
@@ -135,6 +143,7 @@
             this.ValueList.Name = "ValueList";
             this.ValueList.Size = new System.Drawing.Size(219, 94);
             this.ValueList.TabIndex = 9;
+            this.ValueList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ValueList_MouseDoubleClick);
             // 
             // uniquevalueBtn
             // 
@@ -146,13 +155,13 @@
             this.uniquevalueBtn.UseVisualStyleBackColor = true;
             this.uniquevalueBtn.Click += new System.EventHandler(this.uniquevalueBtn_Click);
             // 
-            // textBox2
+            // exptxtBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(22, 314);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(407, 88);
-            this.textBox2.TabIndex = 12;
+            this.exptxtBox.Location = new System.Drawing.Point(22, 314);
+            this.exptxtBox.Multiline = true;
+            this.exptxtBox.Name = "exptxtBox";
+            this.exptxtBox.Size = new System.Drawing.Size(407, 88);
+            this.exptxtBox.TabIndex = 12;
             // 
             // surebtn
             // 
@@ -162,6 +171,7 @@
             this.surebtn.TabIndex = 13;
             this.surebtn.Text = "确定";
             this.surebtn.UseVisualStyleBackColor = true;
+            this.surebtn.Click += new System.EventHandler(this.surebtn_Click);
             // 
             // ApplyBtn
             // 
@@ -171,6 +181,7 @@
             this.ApplyBtn.TabIndex = 14;
             this.ApplyBtn.Text = "应用";
             this.ApplyBtn.UseVisualStyleBackColor = true;
+            this.ApplyBtn.Click += new System.EventHandler(this.ApplyBtn_Click);
             // 
             // CancleBtn
             // 
@@ -180,16 +191,28 @@
             this.CancleBtn.TabIndex = 15;
             this.CancleBtn.Text = "取消";
             this.CancleBtn.UseVisualStyleBackColor = true;
+            this.CancleBtn.Click += new System.EventHandler(this.CancleBtn_Click);
+            // 
+            // Clearbtn
+            // 
+            this.Clearbtn.Location = new System.Drawing.Point(22, 416);
+            this.Clearbtn.Name = "Clearbtn";
+            this.Clearbtn.Size = new System.Drawing.Size(90, 33);
+            this.Clearbtn.TabIndex = 16;
+            this.Clearbtn.Text = "清除表达式";
+            this.Clearbtn.UseVisualStyleBackColor = true;
+            this.Clearbtn.Click += new System.EventHandler(this.Clearbtn_Click);
             // 
             // AttrQueryFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(448, 457);
+            this.Controls.Add(this.Clearbtn);
             this.Controls.Add(this.CancleBtn);
             this.Controls.Add(this.ApplyBtn);
             this.Controls.Add(this.surebtn);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.exptxtBox);
             this.Controls.Add(this.ValueList);
             this.Controls.Add(this.uniquevalueBtn);
             this.Controls.Add(this.orbtn);
@@ -222,9 +245,10 @@
         private System.Windows.Forms.Button orbtn;
         private System.Windows.Forms.ListBox ValueList;
         private System.Windows.Forms.Button uniquevalueBtn;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox exptxtBox;
         private System.Windows.Forms.Button surebtn;
         private System.Windows.Forms.Button ApplyBtn;
         private System.Windows.Forms.Button CancleBtn;
+        private System.Windows.Forms.Button Clearbtn;
     }
 }

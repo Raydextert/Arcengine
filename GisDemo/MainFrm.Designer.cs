@@ -49,6 +49,11 @@
             this.ExportToMapItem = new System.Windows.Forms.ToolStripMenuItem();
             this.QuerystatisticsItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AttrQueryItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SelectByPointItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SelectByRecItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NetAnalysisItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pathAnalysisItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PipeAnalysisItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.LengthCalbtn = new System.Windows.Forms.ToolStripButton();
             this.AreaCalbtn = new System.Windows.Forms.ToolStripButton();
@@ -56,6 +61,7 @@
             this.ZoomOutTool = new System.Windows.Forms.ToolStripButton();
             this.PanToolbtn = new System.Windows.Forms.ToolStripButton();
             this.FullExtentbtn = new System.Windows.Forms.ToolStripButton();
+            this.Clearselectionbtn = new System.Windows.Forms.ToolStripButton();
             this.LyrContxtMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.AttributeFrmItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LyrExtentItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,12 +69,14 @@
             this.DataItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExportDataItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExportToCADItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.标注要素ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MapMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.AddDataItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExpandLyrItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FoldLyrsItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenLyrsItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CloseLyrsItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.GeometryNetAnalysis = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.VerticalSplit)).BeginInit();
             this.VerticalSplit.Panel1.SuspendLayout();
             this.VerticalSplit.Panel2.SuspendLayout();
@@ -164,7 +172,7 @@
             // axLicenseControl1
             // 
             this.axLicenseControl1.Enabled = true;
-            this.axLicenseControl1.Location = new System.Drawing.Point(163, 142);
+            this.axLicenseControl1.Location = new System.Drawing.Point(262, 152);
             this.axLicenseControl1.Name = "axLicenseControl1";
             this.axLicenseControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axLicenseControl1.OcxState")));
             this.axLicenseControl1.Size = new System.Drawing.Size(32, 32);
@@ -187,7 +195,8 @@
             this.MenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.文件ToolStripMenuItem,
-            this.QuerystatisticsItem});
+            this.QuerystatisticsItem,
+            this.NetAnalysisItem});
             this.MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip.Name = "MenuStrip";
             this.MenuStrip.Size = new System.Drawing.Size(1030, 28);
@@ -264,18 +273,56 @@
             // QuerystatisticsItem
             // 
             this.QuerystatisticsItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AttrQueryItem});
+            this.AttrQueryItem,
+            this.SelectByPointItem,
+            this.SelectByRecItem});
             this.QuerystatisticsItem.Name = "QuerystatisticsItem";
             this.QuerystatisticsItem.Size = new System.Drawing.Size(81, 24);
             this.QuerystatisticsItem.Text = "查询统计";
+            this.QuerystatisticsItem.Click += new System.EventHandler(this.QuerystatisticsItem_Click);
             // 
             // AttrQueryItem
             // 
             this.AttrQueryItem.Image = global::GisDemo.Properties.Resources.TableStandaloneSmall161;
             this.AttrQueryItem.Name = "AttrQueryItem";
-            this.AttrQueryItem.Size = new System.Drawing.Size(181, 26);
+            this.AttrQueryItem.Size = new System.Drawing.Size(144, 26);
             this.AttrQueryItem.Text = "属性查询";
             this.AttrQueryItem.Click += new System.EventHandler(this.AttrQueryItem_Click);
+            // 
+            // SelectByPointItem
+            // 
+            this.SelectByPointItem.Name = "SelectByPointItem";
+            this.SelectByPointItem.Size = new System.Drawing.Size(144, 26);
+            this.SelectByPointItem.Text = "点选";
+            this.SelectByPointItem.Click += new System.EventHandler(this.SelectByPointItem_Click);
+            // 
+            // SelectByRecItem
+            // 
+            this.SelectByRecItem.Name = "SelectByRecItem";
+            this.SelectByRecItem.Size = new System.Drawing.Size(144, 26);
+            this.SelectByRecItem.Text = "框选";
+            // 
+            // NetAnalysisItem
+            // 
+            this.NetAnalysisItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pathAnalysisItem,
+            this.PipeAnalysisItem,
+            this.GeometryNetAnalysis});
+            this.NetAnalysisItem.Name = "NetAnalysisItem";
+            this.NetAnalysisItem.Size = new System.Drawing.Size(81, 24);
+            this.NetAnalysisItem.Text = "网络分析";
+            // 
+            // pathAnalysisItem
+            // 
+            this.pathAnalysisItem.Name = "pathAnalysisItem";
+            this.pathAnalysisItem.Size = new System.Drawing.Size(181, 26);
+            this.pathAnalysisItem.Text = "最短路径分析";
+            // 
+            // PipeAnalysisItem
+            // 
+            this.PipeAnalysisItem.Name = "PipeAnalysisItem";
+            this.PipeAnalysisItem.Size = new System.Drawing.Size(181, 26);
+            this.PipeAnalysisItem.Text = "爆管分析";
             // 
             // toolStrip1
             // 
@@ -286,7 +333,8 @@
             this.ZoomInTool,
             this.ZoomOutTool,
             this.PanToolbtn,
-            this.FullExtentbtn});
+            this.FullExtentbtn,
+            this.Clearselectionbtn});
             this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1030, 27);
@@ -353,6 +401,16 @@
             this.FullExtentbtn.Text = "缩放至全图";
             this.FullExtentbtn.Click += new System.EventHandler(this.FullExtentbtn_Click);
             // 
+            // Clearselectionbtn
+            // 
+            this.Clearselectionbtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Clearselectionbtn.Image = global::GisDemo.Properties.Resources.SelectionClearSelected16;
+            this.Clearselectionbtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Clearselectionbtn.Name = "Clearselectionbtn";
+            this.Clearselectionbtn.Size = new System.Drawing.Size(24, 24);
+            this.Clearselectionbtn.Text = "清除所选要素";
+            this.Clearselectionbtn.Click += new System.EventHandler(this.Clearselectionbtn_Click);
+            // 
             // LyrContxtMenuStrip
             // 
             this.LyrContxtMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -360,9 +418,10 @@
             this.AttributeFrmItem,
             this.LyrExtentItem,
             this.LyrToPicItem,
-            this.DataItem});
+            this.DataItem,
+            this.标注要素ToolStripMenuItem});
             this.LyrContxtMenuStrip.Name = "LyrContxtMenuStrip";
-            this.LyrContxtMenuStrip.Size = new System.Drawing.Size(158, 108);
+            this.LyrContxtMenuStrip.Size = new System.Drawing.Size(158, 134);
             // 
             // AttributeFrmItem
             // 
@@ -410,6 +469,12 @@
             this.ExportToCADItem.Size = new System.Drawing.Size(146, 26);
             this.ExportToCADItem.Text = "导出CAD";
             this.ExportToCADItem.Click += new System.EventHandler(this.ExportToCADItem_Click);
+            // 
+            // 标注要素ToolStripMenuItem
+            // 
+            this.标注要素ToolStripMenuItem.Name = "标注要素ToolStripMenuItem";
+            this.标注要素ToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
+            this.标注要素ToolStripMenuItem.Text = "标注要素";
             // 
             // MapMenuStrip
             // 
@@ -460,6 +525,13 @@
             this.CloseLyrsItem.Size = new System.Drawing.Size(172, 26);
             this.CloseLyrsItem.Text = "关闭所有图层";
             this.CloseLyrsItem.Click += new System.EventHandler(this.CloseLyrsItem_Click);
+            // 
+            // GeometryNetAnalysis
+            // 
+            this.GeometryNetAnalysis.Name = "GeometryNetAnalysis";
+            this.GeometryNetAnalysis.Size = new System.Drawing.Size(181, 26);
+            this.GeometryNetAnalysis.Text = "几何网络分析";
+            this.GeometryNetAnalysis.Click += new System.EventHandler(this.GeometryNetAnalysis_Click);
             // 
             // MainFrm
             // 
@@ -539,6 +611,14 @@
         private System.Windows.Forms.ToolStripMenuItem CloseLyrsItem;
         private System.Windows.Forms.ToolStripMenuItem QuerystatisticsItem;
         private System.Windows.Forms.ToolStripMenuItem AttrQueryItem;
+        private System.Windows.Forms.ToolStripButton Clearselectionbtn;
+        private System.Windows.Forms.ToolStripMenuItem SelectByPointItem;
+        private System.Windows.Forms.ToolStripMenuItem SelectByRecItem;
+        private System.Windows.Forms.ToolStripMenuItem NetAnalysisItem;
+        private System.Windows.Forms.ToolStripMenuItem pathAnalysisItem;
+        private System.Windows.Forms.ToolStripMenuItem PipeAnalysisItem;
+        private System.Windows.Forms.ToolStripMenuItem 标注要素ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem GeometryNetAnalysis;
     }
 }
 

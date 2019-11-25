@@ -183,6 +183,16 @@ namespace GisDemo.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap SelectionClearSelected16 {
+            get {
+                object obj = ResourceManager.GetObject("SelectionClearSelected16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap TableStandaloneSmall_B_16 {
             get {
                 object obj = ResourceManager.GetObject("TableStandaloneSmall_B_16", resourceCulture);
@@ -206,6 +216,66 @@ namespace GisDemo.Properties {
         internal static System.Drawing.Bitmap TableStandaloneSmall161 {
             get {
                 object obj = ResourceManager.GetObject("TableStandaloneSmall161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap UtilityNetworkBarrierEdgeAddTool16 {
+            get {
+                object obj = ResourceManager.GetObject("UtilityNetworkBarrierEdgeAddTool16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap UtilityNetworkBarrierJunctionAddTool16 {
+            get {
+                object obj = ResourceManager.GetObject("UtilityNetworkBarrierJunctionAddTool16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap UtilityNetworkEdgeAddTool16 {
+            get {
+                object obj = ResourceManager.GetObject("UtilityNetworkEdgeAddTool16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap UtilityNetworkJunctionAddTool16 {
+            get {
+                object obj = ResourceManager.GetObject("UtilityNetworkJunctionAddTool16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap UtilityNetworkJunctionAddTool161 {
+            get {
+                object obj = ResourceManager.GetObject("UtilityNetworkJunctionAddTool161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap UtilityNetworkSolve16 {
+            get {
+                object obj = ResourceManager.GetObject("UtilityNetworkSolve16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
