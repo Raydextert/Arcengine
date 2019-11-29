@@ -97,12 +97,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\AddEdgeBarrierTool.cs" />
+    <Compile Include="Command\AddEdgeTool.cs" />
+    <Compile Include="Command\AddJunctionBarrierTool.cs" />
     <Compile Include="Command\ClearselectionTool.cs" />
     <Compile Include="Command\DciBaseTool.cs" />
     <Compile Include="Command\ExportCADTool.cs" />
     <Compile Include="Command\ExportMap.cs" />
     <Compile Include="Command\IArcEngineToolbarButton.cs" />
     <Compile Include="Command\PanTool.cs" />
+    <Compile Include="Command\AddJunctionFlagTool.cs" />
     <Compile Include="Command\ZoomInTool.cs" />
     <Compile Include="Command\ZoomOutTool.cs" />
     <Compile Include="forms\AttrbuteFrm.cs">
@@ -153,6 +157,7 @@
     <Compile Include="MainFrm.Designer.cs">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Method\Method.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\AttrbuteFrm.resx">

@@ -726,9 +726,10 @@ namespace GisDemo
             {
                 netAnalysisFrm = new NetAnalysisFrm();
                 netAnalysisFrm.Mapcontrol = this.axMapcontrol.GetOcx() as IMapControlDefault;
-            }
-
+            }  
             netAnalysisFrm.Show();
+            netAnalysisFrm.Owner = this;
+            netAnalysisFrm.Activate();
         }
 
     }

@@ -54,6 +54,7 @@
             this.NetAnalysisItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pathAnalysisItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PipeAnalysisItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.GeometryNetAnalysis = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.LengthCalbtn = new System.Windows.Forms.ToolStripButton();
             this.AreaCalbtn = new System.Windows.Forms.ToolStripButton();
@@ -76,7 +77,6 @@
             this.FoldLyrsItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenLyrsItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CloseLyrsItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.GeometryNetAnalysis = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.VerticalSplit)).BeginInit();
             this.VerticalSplit.Panel1.SuspendLayout();
             this.VerticalSplit.Panel2.SuspendLayout();
@@ -315,14 +315,21 @@
             // pathAnalysisItem
             // 
             this.pathAnalysisItem.Name = "pathAnalysisItem";
-            this.pathAnalysisItem.Size = new System.Drawing.Size(181, 26);
+            this.pathAnalysisItem.Size = new System.Drawing.Size(174, 26);
             this.pathAnalysisItem.Text = "最短路径分析";
             // 
             // PipeAnalysisItem
             // 
             this.PipeAnalysisItem.Name = "PipeAnalysisItem";
-            this.PipeAnalysisItem.Size = new System.Drawing.Size(181, 26);
+            this.PipeAnalysisItem.Size = new System.Drawing.Size(174, 26);
             this.PipeAnalysisItem.Text = "爆管分析";
+            // 
+            // GeometryNetAnalysis
+            // 
+            this.GeometryNetAnalysis.Name = "GeometryNetAnalysis";
+            this.GeometryNetAnalysis.Size = new System.Drawing.Size(174, 26);
+            this.GeometryNetAnalysis.Text = "几何网络分析";
+            this.GeometryNetAnalysis.Click += new System.EventHandler(this.GeometryNetAnalysis_Click);
             // 
             // toolStrip1
             // 
@@ -525,13 +532,6 @@
             this.CloseLyrsItem.Size = new System.Drawing.Size(172, 26);
             this.CloseLyrsItem.Text = "关闭所有图层";
             this.CloseLyrsItem.Click += new System.EventHandler(this.CloseLyrsItem_Click);
-            // 
-            // GeometryNetAnalysis
-            // 
-            this.GeometryNetAnalysis.Name = "GeometryNetAnalysis";
-            this.GeometryNetAnalysis.Size = new System.Drawing.Size(181, 26);
-            this.GeometryNetAnalysis.Text = "几何网络分析";
-            this.GeometryNetAnalysis.Click += new System.EventHandler(this.GeometryNetAnalysis_Click);
             // 
             // MainFrm
             // 

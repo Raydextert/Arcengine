@@ -1,4 +1,5 @@
-﻿namespace GisDemo.forms
+﻿using System.Windows.Forms;
+namespace GisDemo.forms
 {
     partial class NetAnalysisFrm
     {
@@ -43,6 +44,7 @@
             this.AnalysisCategoryCmbx = new System.Windows.Forms.ToolStripComboBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.ResultBtn = new System.Windows.Forms.ToolStripButton();
+            this.ClearFlowItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +69,8 @@
             this.AnalysisItemBtn.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ClearMarkItem,
             this.ClearBarrierItem,
-            this.ClearResultItem});
+            this.ClearResultItem,
+            this.ClearFlowItem});
             this.AnalysisItemBtn.Image = ((System.Drawing.Image)(resources.GetObject("AnalysisItemBtn.Image")));
             this.AnalysisItemBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.AnalysisItemBtn.Name = "AnalysisItemBtn";
@@ -79,18 +82,21 @@
             this.ClearMarkItem.Name = "ClearMarkItem";
             this.ClearMarkItem.Size = new System.Drawing.Size(181, 26);
             this.ClearMarkItem.Text = "清除标记";
+            this.ClearMarkItem.Click += new System.EventHandler(this.ClearMarkItem_Click);
             // 
             // ClearBarrierItem
             // 
             this.ClearBarrierItem.Name = "ClearBarrierItem";
             this.ClearBarrierItem.Size = new System.Drawing.Size(181, 26);
             this.ClearBarrierItem.Text = "清除障碍";
+            this.ClearBarrierItem.Click += new System.EventHandler(this.ClearBarrierItem_Click);
             // 
             // ClearResultItem
             // 
             this.ClearResultItem.Name = "ClearResultItem";
             this.ClearResultItem.Size = new System.Drawing.Size(181, 26);
             this.ClearResultItem.Text = "清除结果";
+            this.ClearResultItem.Click += new System.EventHandler(this.ClearResultItem_Click);
             // 
             // AddJunctionBtn
             // 
@@ -112,6 +118,7 @@
             this.AddJunctionFlagBtn.Name = "AddJunctionFlagBtn";
             this.AddJunctionFlagBtn.Size = new System.Drawing.Size(189, 26);
             this.AddJunctionFlagBtn.Text = "添加交汇点工具";
+            this.AddJunctionFlagBtn.Click += new System.EventHandler(this.AddJunctionFlagBtn_Click);
             // 
             // AddEdgeFlagBtn
             // 
@@ -119,6 +126,7 @@
             this.AddEdgeFlagBtn.Name = "AddEdgeFlagBtn";
             this.AddEdgeFlagBtn.Size = new System.Drawing.Size(189, 26);
             this.AddEdgeFlagBtn.Text = "添加交汇边工具";
+            this.AddEdgeFlagBtn.Click += new System.EventHandler(this.AddEdgeFlagBtn_Click);
             // 
             // AddJunctionBarrierBtn
             // 
@@ -126,6 +134,7 @@
             this.AddJunctionBarrierBtn.Name = "AddJunctionBarrierBtn";
             this.AddJunctionBarrierBtn.Size = new System.Drawing.Size(189, 26);
             this.AddJunctionBarrierBtn.Text = "添加障碍点工具";
+            this.AddJunctionBarrierBtn.Click += new System.EventHandler(this.AddJunctionBarrierBtn_Click);
             // 
             // AddEdgeBarrierBtn
             // 
@@ -133,9 +142,11 @@
             this.AddEdgeBarrierBtn.Name = "AddEdgeBarrierBtn";
             this.AddEdgeBarrierBtn.Size = new System.Drawing.Size(189, 26);
             this.AddEdgeBarrierBtn.Text = "添加障碍边工具";
+            this.AddEdgeBarrierBtn.Click += new System.EventHandler(this.AddEdgeBarrierBtn_Click);
             // 
             // AnalysisCategoryCmbx
             // 
+            this.AnalysisCategoryCmbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.AnalysisCategoryCmbx.Items.AddRange(new object[] {
             "公共祖先追踪分析",
             "网络连接要素分析",
@@ -174,6 +185,14 @@
             this.ResultBtn.Name = "ResultBtn";
             this.ResultBtn.Size = new System.Drawing.Size(24, 39);
             this.ResultBtn.Text = "toolStripButton1";
+            this.ResultBtn.Click += new System.EventHandler(this.ResultBtn_Click);
+            // 
+            // ClearFlowItem
+            // 
+            this.ClearFlowItem.Name = "ClearFlowItem";
+            this.ClearFlowItem.Size = new System.Drawing.Size(181, 26);
+            this.ClearFlowItem.Text = "清除流向";
+            this.ClearFlowItem.Click += new System.EventHandler(this.ClearFlowItem_Click);
             // 
             // NetAnalysisFrm
             // 
@@ -207,6 +226,7 @@
         private System.Windows.Forms.ToolStripComboBox AnalysisCategoryCmbx;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton ResultBtn;
+        private ToolStripMenuItem ClearFlowItem;
 
     }
 }
